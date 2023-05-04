@@ -1,8 +1,12 @@
 import React from 'react'
+import CompanyListWithLoading from './components/CompanyList'
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <CompanyListWithLoading />
+    </>
   )
 }
 
