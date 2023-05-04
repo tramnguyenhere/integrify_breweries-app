@@ -1,0 +1,13 @@
+@use '../../assets/styles/variables/colors' as colors;
+@use '../../assets/styles/variables/fonts' as fonts;
+
+header {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
+    background: colors.$color--brown;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-family: fonts.$font--primary;
+    text-align: center;
+}
