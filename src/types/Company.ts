@@ -16,3 +16,7 @@ export interface Company {
     state: string,
     street: string
 }
+
+export interface CompanyListProps {
+    data: Company[]
+  }

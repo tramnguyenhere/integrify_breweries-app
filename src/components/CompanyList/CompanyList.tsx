@@ -1,14 +1,9 @@
 import React from 'react'
+import { List, ListItem } from '@mui/material'
 
 import withLoading from '../withLoading'
-import { Company } from '../../types/Company'
-
-import { List, ListItem, ListItemButton } from '@mui/material'
+import { Company, CompanyListProps } from '../../types/Company'
 import './CompanyList.scss'
-
-interface CompanyListProps {
-  data: Company[]
-}
 
 const CompanyList = ({data} : CompanyListProps) => {
   return (
