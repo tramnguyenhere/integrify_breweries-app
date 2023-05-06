@@ -1,0 +1,13 @@
+@use '../../assets/styles/variables/fonts';
+@use '../../assets/styles/variables/colors';
+
+.not-found {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: fonts.$font--primary;
+    background: linear-gradient(colors.$color--brown, colors.$color--beige);
+}

@@ -1,0 +1,28 @@
+@use '../../assets/styles/variables/colors';
+@use '../../assets/styles/variables/fonts';
+
+.card-detail {
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    font-size: 1rem;
+    font-family:  fonts.$font--primary;
+    padding: 0;
+    
+    &__header {
+        font-weight: 600;
+    }
+    &__content {
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: colors.$color--dark-brown;
+
+        &:hover {
+            color: colors.$color--green;
+        }
+    }
+}

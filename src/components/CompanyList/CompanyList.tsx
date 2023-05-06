@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { List, ListItem } from '@mui/material'
+import {Link} from 'react-router-dom'
 
 import withLoading from '../withLoading'
 import { Company } from '../../types/Company'
@@ -29,7 +30,7 @@ const CompanyList = ({ data }: any) => {
         {searchResults.map((item: Company) => (
           <ListItem key={item.id} className='item'>
             <p className='item__text'>{item.name}</p>
-            <button className='item__button'>More details</button>
+            <Link className='item__button' to={item.id}>More details</Link>
           </ListItem>
         ))}
         </List>

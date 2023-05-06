@@ -1,15 +1,28 @@
 import React from 'react'
-
-import CompanyListWithLoading from './components/CompanyList/CompanyList'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './views/Home/Home'
+import NotFound from './views/NotFound/NotFound'
+import CompanyDetails from './views/CompanyDetails/CompanyDetails'
 import Header from './components/Header/Header'
-import SearchListWithLoading from './components/SearchBar/SearchBar'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: ":id",
+    element: <CompanyDetails />
+  }
+])
 
 const App = () => {
   return (
     <>
       <Header />
-      <CompanyListWithLoading />
-    </>
+      <RouterProvider router={router} />
+    </> 
   )
 }
 
