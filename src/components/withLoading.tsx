@@ -14,7 +14,7 @@ const withLoading = (
                     result => result.json()
                 ).then(
                     result => {
-                        console.log(result);
+                        // console.log(result);
                         
                         setData(result)
                         setLoading(false)

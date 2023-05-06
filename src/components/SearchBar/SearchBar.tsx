@@ -1,29 +1,13 @@
 import React from 'react'
-import {Autocomplete, TextField} from '@mui/material'
-import withLoading from '../withLoading'
-import { CompanyListProps } from '../../types/Company'
+import { Input} from '@mui/material'
 
-const SearchBar = ({data}: CompanyListProps) => {
+import './SearchBar.scss'
+
+
+const SearchBar = ({handleInputChange}: any) => {
   return (
-      <>
-        <Autocomplete
-          id="search-brewery-companies"
-          freeSolo
-          disableClearable
-          options={data.map((option) => option.name)}
-          renderInput={(params) =>
-            <TextField {...params}
-              label="Search Brewery Companies"
-              InputProps={{
-                ...params.InputProps,
-                type: 'search',
-              }}
-            />}
-        />
-      </>
+    <Input className='search-bar' fullWidth placeholder='Search companies' onChange={handleInputChange} />
   )
 }
 
-const SearchListWithLoading = withLoading(SearchBar, "https://api.openbrewerydb.org/v1/breweries")
-
-export default SearchListWithLoading
+export default SearchBar
