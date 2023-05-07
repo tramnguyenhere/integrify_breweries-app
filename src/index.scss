@@ -1,4 +1,4 @@
-@use './assets/styles/variables/fonts' as fonts;
+@use './assets/styles/variables/colors';
 
 * {
   margin: 0;
@@ -8,4 +8,5 @@
 
 body {
   overflow-y: hidden;
+  background: colors.$color--light-green;
 }

@@ -14,7 +14,7 @@ const CardDetail = ({cardDetailHeader, cardDetailContent, isLink, cardDetailLink
     <div className='card-detail'>
         <p className='card-detail__header'>{cardDetailHeader}</p>
           {isLink ?
-              <a className='card-detail__content' href={cardDetailLink}>{cardDetailContent}</a> :
+              <a className='card-detail__content' target="_blank" href={cardDetailLink} rel="noreferrer">{cardDetailContent}</a> :
               <p className='card-detail__content'>{cardDetailContent}</p>}
     </div>
   )

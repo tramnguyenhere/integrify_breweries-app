@@ -21,6 +21,8 @@
             font-family: fonts.$font--secondary;
         }
         &__button {
+            text-decoration: none;
+            color: colors.$color--dark-brown;
             font-family: fonts.$font--primary;
             width: fit-content;
             padding: .2rem .6rem;

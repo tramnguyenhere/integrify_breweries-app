@@ -2,24 +2,100 @@
 
 Fetch, display, and search for brewery companies from the given API endpoint, using React and TypeScript
 
-## Requirements
+## Link to the demo
 
-1. Check the documentation at [https://www.openbrewerydb.org/documentation](https://www.openbrewerydb.org/documentation) Fetch and display information of all the companies.
+[https://integrify-brewery-companies.netlify.app/](https://integrify-brewery-companies.netlify.app/)
 
-2. Have proper display and routing that user can switch to/back from specific company's detailed page
+## Table of content
 
-3. Create search component to enable user to input text and search for companies by name.
+- [Technologies](#technologies)
+- [Project structure](#project-structure)
+- [Getting started](#getting-started)
 
-4. Use MaterialUI to make your design more appealing and responsive
+<a name="technologies"></a>
 
-5. Implement performance optimization where applicable
+## Technologies
 
-6. Deploy your application and rewrite README file
+- TypeScript
+- React.js
+- SASS
+- Material UI
 
-## Optional
+<a name="project-structure"></a>
 
-7. Use the queries listed in the documentation to sort and limit the returned data and build pagination feature.
+## Project structure
 
-8. Create a contact form so that user can send question along with their contact information. 
+```
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   README.md
+│   tsconfig.json
+│
+├───public
+│       favicon.ico
+│       index.html
+│       logo192.png
+│       logo512.png
+│       manifest.json
+│       robots.txt
+│
+└───src
+    │   App.tsx
+    │   index.scss
+    │   index.tsx
+    │
+    ├───assets
+    │   └───styles
+    │       └───variables
+    │               _colors.scss
+    │               _fonts.scss
+    │
+    ├───components
+    │   │   withLoading.tsx
+    │   │
+    │   ├───BackToHomeLink
+    │   │       BackToHomeLink.scss
+    │   │       BackToHomeLink.tsx
+    │   │
+    │   ├───CardDetail
+    │   │       CardDetail.scss
+    │   │       CardDetail.tsx
+    │   │
+    │   ├───CompanyList
+    │   │       CompanyList.scss
+    │   │       CompanyList.tsx
+    │   │
+    │   ├───Header
+    │   │       Header.scss
+    │   │       Header.tsx
+    │   │
+    │   └───SearchBar
+    │           SearchBar.scss
+    │           SearchBar.tsx
+    │
+    ├───types
+    │       Company.ts
+    │
+    └───views
+        ├───CompanyDetails
+        │       CompanyDetails.scss
+        │       CompanyDetails.tsx
+        │
+        ├───Home
+        │       Home.tsx
+        │
+        └───NotFound
+                NotFound.scss
+                NotFound.tsx
+```
 
-9. Use Google-login option to pre-fill the contact form for user.
+<a name="getting-started"></a>
+
+## Getting started
+
+Clone the repository from github:
+
+```
+git clone https://github.com/tramnguyenhere/integrify_breweries-app.git
+```
