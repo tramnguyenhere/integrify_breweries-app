@@ -1,0 +1,32 @@
+@use '../../assets/styles/variables/colors';
+@use '../../assets/styles/variables/fonts';
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+
+    &__button {
+        padding: .5rem;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: colors.$color--light-green !important;
+        background: colors.$color--brown !important;
+        width: fit-content;
+        font-family: fonts.$font--primary;
+        font-size: 1rem;
+        transition: all .2s ease-in-out;
+    
+        &:hover {
+            background: colors.$color--light-green;
+            color: colors.$color--dark-brown;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        margin: .5rem !important;
+        background: colors.$color--beige;
+    }
+}

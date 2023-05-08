@@ -1,7 +1,7 @@
 import React from 'react'
 
-import './NotFound.scss'
 import BackToHomeLink from '../../components/BackToHomeLink/BackToHomeLink'
+import './NotFound.scss'
 
 const NotFound = () => {
   return (

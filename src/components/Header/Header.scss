@@ -4,10 +4,23 @@
 header {
     width: 100%;
     height: fit-content;
-    padding: 1rem 0;
+    padding: 1rem;
     background: colors.$color--brown;
     text-transform: uppercase;
     letter-spacing: .3rem;
     font-family: fonts.$font--primary;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .header__link {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+    
+    #brand-name {
+        font-size: 2rem;
+    }
 }

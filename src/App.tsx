@@ -4,6 +4,7 @@ import Home from './views/Home/Home'
 import NotFound from './views/NotFound/NotFound'
 import CompanyDetails from './views/CompanyDetails/CompanyDetails'
 import Header from './components/Header/Header'
+import Contact from './views/Contact/Contact'
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,12 @@ const router = createBrowserRouter([
   {
     path: ":id",
     element: <CompanyDetails />
-  }
+  },
+  {
+    path: "contact",
+    element: <Contact />
+  },
+
 ])
 
 const App = () => {
