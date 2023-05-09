@@ -1,5 +1,6 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 import Home from './views/Home/Home'
 import NotFound from './views/NotFound/NotFound'
 import CompanyDetails from './views/CompanyDetails/CompanyDetails'
