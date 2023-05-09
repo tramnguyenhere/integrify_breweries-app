@@ -4,7 +4,7 @@ Fetch, display, and search for brewery companies from the given API endpoint, us
 
 ## Link to the demo
 
-[https://integrify-brewery-companies.netlify.app/](https://integrify-brewery-companies.netlify.app/)
+[https://integrify-breweries-app.vercel.app/](https://integrify-breweries-app.vercel.app/)
 
 ## Table of content
 
