@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import {CompanyListProps } from '../types/Company'
 
 const withLoading = (
-    ChildComponent: (data: any) => JSX.Element,
+    ChildComponent: (data: CompanyListProps) => JSX.Element,
     url: string) => {
     return () => {
         const [data, setData] = useState([])
@@ -13,9 +14,7 @@ const withLoading = (
                 fetch(url).then(
                     result => result.json()
                 ).then(
-                    result => {
-                        // console.log(result);
-                        
+                    result => { 
                         setData(result)
                         setLoading(false)
                     }
